@@ -1,4 +1,4 @@
-# node-spritesheet
+# fork of node-spritesheet - modified for less css without grunt
 
 Node-spritesheet is a utility to create sprite sheets in node.js. Its original
 intention was to be used as a [Grunt](https://github.com/cowboy/grunt) task,
