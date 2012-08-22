@@ -2,7 +2,7 @@ fs            = require( 'fs' )
 qfs           = require( 'q-fs' )
 exec          = require( 'child_process' ).exec
 async         = require( 'async' )
-ImageMagick   = require( './ImageMagick' )
+ImageMagick   = require( './imagemagick' )
 Layout        = require( './layout' )
 Style         = require( './style' )
 
