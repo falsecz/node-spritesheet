@@ -7,13 +7,10 @@
     },
     "main": "./node-spritesheet",
     "scripts": {
-        "install": "./scripts/imagemagick.sh"
+        "install-disabled": "./scripts/imagemagick.sh"
     },
     "dependencies": {
         "async": "*",
         "q-fs": "*"
-    },
-    "devDependencies": {
-        "grunt-contrib": "*"
     }
 }

@@ -1,6 +1,6 @@
 module.exports = {
-  Builder: require( './lib/builder' ),
-  ImageMagick: require( './lib/imagemagick' ),
-  Layout: require( './lib/layout' ),
-  Style: require( './lib/style' )
+  Builder: require( './src/builder' ),
+  ImageMagick: require( './src/imagemagick' ),
+  Layout: require( './src/layout' ),
+  Style: require( './src/style' )
 }

@@ -31,7 +31,7 @@ class ImageMagick
         throw "Error in creating canvas (#{ filepath }): #{ error || stderr }"
       
       compose = ( image, next ) =>
-        console.log "  Composing #{ image.path }"
+        # console.log "  Composing #{ image.path }"
         @composeImage filepath, image, next
       
       async.forEachSeries images, compose, callback

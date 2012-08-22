@@ -11,12 +11,13 @@ class Style
   
   generate: ( selector, path, images ) ->
     styles = [
-      @css selector, [
+      @css "#{selector}-background", [
         "  background: url( '#{ path }' ) no-repeat"
       ]
     ]
     for image in images
       attr = [
+        "  #{selector}-background"
         "  width: #{ image.cssw }px"
         "  height: #{ image.cssh }px"
         "  background-position: #{ -image.cssx }px #{ -image.cssy }px"
@@ -24,7 +25,7 @@ class Style
       image.selector = selector
       image.style = @cssStyle attr
       
-      styles.push @css( [ selector, image.name ].join( '.' ), attr )
+      styles.push @css( [ selector, image.name ].join( '-' ), attr )
     
     styles.push ""
     styles.join "\n"

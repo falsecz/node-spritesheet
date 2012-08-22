@@ -16,7 +16,7 @@ class SpriteSheetBuilder
     SpriteSheetBuilder.supportsPngcrush ( supported ) ->
       if supported
         crushed = "#{ image }.crushed"
-        console.log "pngcrushing, this may take a few moments..."
+        console.log "pngcrushing, this may take a few moments..." 
         exec "pngcrush -reduce #{ image } #{ crushed } && mv #{ crushed } #{ image }", ( error, stdout, stderr ) =>
           callback()
       else
@@ -34,7 +34,9 @@ class SpriteSheetBuilder
     throw "no output style file specified"    if !@outputStyleFilePath
     
     @layoutImages =>
-      console.log @summary()
+      #console.log 
+      s = @summary()
+      console.log s if @options.verbose
       
       async.series [
         @ensureDirectory
