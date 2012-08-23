@@ -18,6 +18,7 @@ class Style
     for image in images
       attr = [
         "  #{selector}-background"
+		"  display: block "
         "  width: #{ image.cssw }px"
         "  height: #{ image.cssh }px"
         "  background-position: #{ -image.cssx }px #{ -image.cssy }px"
