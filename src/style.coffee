@@ -12,7 +12,7 @@ class Style
   generate: ( selector, path, images ) ->
     styles = [
       @css "#{selector}-background", [
-        '  background: url( "@{base-sprite-url}/' + path + '?r={Math.random()}" ) no-repeat'
+        '  background: url( "@{base-sprite-url}/' + path + '?r=' + Math.random() + '" ) no-repeat'
       ]
     ]
     for image in images
