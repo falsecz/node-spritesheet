@@ -65,7 +65,7 @@ class SpriteSheetBuilder
       if err
         throw err
       else
-        console.log "CSS file written to", @outputStyleFilePath
+        # console.log "CSS file written to", @outputStyleFilePath
         callback()
 
   styleComment: ( comment ) ->
